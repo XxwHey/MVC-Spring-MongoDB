@@ -12,15 +12,15 @@ import org.json.JSONObject;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.*;
-
 /**
  * Created by xiexw on 2017/8/8.
+ * test
  */
 public class MongoText {
 
     public static void main(String[] args) throws Exception {
 
+        //优先使用基本类型
 //        long sum = 0L;
 //        long now = System.currentTimeMillis();
 //        for (long i = 0; i < Integer.MAX_VALUE; i++) {
@@ -29,14 +29,15 @@ public class MongoText {
 //        long end = System.currentTimeMillis();
 //        System.out.println("耗时：" + (end - now) + "ms");
 
-        WeakHashMap map = new WeakHashMap();
-        map.put(1, "hello");
-        map.put(2, "world");
-        System.out.println(map.get(1));
-        System.out.println("=========================");
-        Thread.sleep(20000);
-        System.out.println(map.get(1));
-        System.out.println(map.get(2));
+        //内存回收
+//        WeakHashMap map = new WeakHashMap();
+//        map.put(1, "hello");
+//        map.put(2, "world");
+//        System.out.println(map.get(1));
+//        System.out.println("=========================");
+//        Thread.sleep(20000);
+//        System.out.println(map.get(1));
+//        System.out.println(map.get(2));
 
 //        JaxWsProxyFactoryBean svr = new JaxWsProxyFactoryBean();
 //        svr.setServiceClass(ICXFService.class);
@@ -48,6 +49,8 @@ public class MongoText {
 //        List list = Arrays.asList(1, 2, 3);
 //        list.forEach(System.out::println);
     }
+
+
 
     public static boolean valueOf(boolean value) {
         return value ? Boolean.TRUE : Boolean.FALSE;

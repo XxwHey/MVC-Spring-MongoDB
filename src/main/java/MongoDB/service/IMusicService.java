@@ -15,4 +15,6 @@ public interface IMusicService {
 
     List<Music> getAll();
 
+    void sayHello();
+
 }

@@ -32,4 +32,9 @@ public class MusicServiceImpl implements IMusicService {
     public List<Music> getAll() {
         return musicDAO.listAll();
     }
+
+    @Override
+    public void sayHello() {
+        System.out.println("hello world!");
+    }
 }
